@@ -20,7 +20,7 @@ class PersistentViewBot(commands.Bot):
 
     async def setup_hook(self):
         await bot.load_extension("cogs.shops")
-        await bot.tree.sync(guild=discord.Object(id=1125844020892012656))
+        await bot.tree.sync(guild=discord.Object(id=1125004551066484767))
 
     async def on_command_error(self, ctx, error):
         if isinstance(error, commands.MissingPermissions):
